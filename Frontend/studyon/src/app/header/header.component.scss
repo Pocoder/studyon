@@ -9,13 +9,12 @@ $background-moredark: #4527A0;
   padding: $pad-up-down $pad-left-right;
 }
 
-.jumbotron {
-  @include zero-margin(70px,30px);
-  background: $background-light ;
+.mat-toolbar {
+  @include zero-margin(0px, 10px);
   color:floralwhite;
-  min-height: 100px;
+  min-height: 0px;
 }
 
-.active {
-  background: $background-moredark;
-}
+//.active {
+//  background: $background-moredark;
+//}
