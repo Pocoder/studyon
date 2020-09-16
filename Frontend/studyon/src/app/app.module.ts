@@ -12,7 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog'
-import {baseURL} from './shared/baseurl';
+import { baseURL } from './shared/baseurl';
 
 
 import { AppComponent } from './app.component';
@@ -21,7 +21,11 @@ import 'hammerjs';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-;
+
+import { AuthService } from './services/auth.service';
+import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interceptor';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,9 +48,20 @@ import { LoginComponent } from './login/login.component';
     MatCheckboxModule,
     FormsModule,
     MatDialogModule,
+    HttpClientModule
   ],
   providers: [
-    {provide: 'BaseURL', useValue: baseURL}
+    {provide: 'BaseURL', useValue: baseURL},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: UnauthorizedInterceptor,
+      multi: true
+    }
   ],
   entryComponents: [
     LoginComponent
