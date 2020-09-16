@@ -11,8 +11,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatListModule } from '@angular/material/list';
+import { MatProgressSpinnerModule } from '@angular/material';
 import { baseURL } from './shared/baseurl';
 
 
@@ -59,7 +61,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     FormsModule,
     MatDialogModule,
     HttpClientModule,
-    MatListModule
+    MatListModule,
+    MatProgressSpinnerModule,
+    ReactiveFormsModule
   ],
   providers: [
     ProcessHTTPMsgService,

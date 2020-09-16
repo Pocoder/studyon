@@ -11,7 +11,7 @@ router.use(bodyParser.json());
 
 /* GET users listing. */
 router.get('/', authenticate.verifyUser, (req, res, next) => {
-    User.find()
+    User.find(req.query)
         .then((users) => {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');

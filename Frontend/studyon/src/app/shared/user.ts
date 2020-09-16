@@ -1,12 +1,9 @@
 
+
 export class User {
   _id: string;
-  name: string;
+  firstname: string;
+  lastname: string;
+  username: string;
   image: string;
-  category: string;
-  label: string;
-  price: string;
-  featured: boolean;
-  description: string;
-  comments: Comment[];
 }

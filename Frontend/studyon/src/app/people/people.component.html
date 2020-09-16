@@ -3,9 +3,29 @@
      fxLayout.sm="column"
      fxLayout.xs="column"
      fxLayoutGap="10px">
-  <div>
   <h2>
     Here you can find your friends.
   </h2>
+  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+    <input name="username" placeholder="enter username">
+    <button type="submit" class="background-primary text-floral-white" [disabled]="searchForm.invalid">Search</button>
+  </form>
+  <div>
+    <h2> Results </h2>
+    <mat-list *ngIf="users" [@expand]>
+      <mat-list-item *ngFor="let user of users">
+        <h4 matLine> {{user.username}} </h4>
+        <p matLine> {{user.firstname}}</p>
+        <p matLine>{{user.lastname}}</p>
+      </mat-list-item>
+    </mat-list>
+    <div [hidden]="users || errMess">
+      <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
+    </div>
+    <div *ngIf="errMess">
+      <h2>Error</h2>
+      <h4>{{errMess}}</h4>
+    </div>
   </div>
-</div>
+<div>
+
