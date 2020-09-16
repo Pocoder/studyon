@@ -72,3 +72,12 @@ body {
 .head_div{
   background-color: $primary-color;
 }
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-dialog-actions{
+  position: relative;
+  bottom: -70px;
+}

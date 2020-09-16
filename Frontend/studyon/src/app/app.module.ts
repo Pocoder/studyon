@@ -12,7 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog'
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { baseURL } from './shared/baseurl';
 
 
@@ -24,11 +24,13 @@ import { PeopleComponent } from './people/people.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 import { AuthService } from './services/auth.service';
 import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interceptor';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     HomeComponent,
     LoginComponent,
     StudyonsComponent,
-    PeopleComponent
+    PeopleComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     }
   ],
   entryComponents: [
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   bootstrap: [AppComponent]
 })

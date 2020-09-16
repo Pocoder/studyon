@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
-  Login
+  Sign Up
   <span class="flex-spacer"></span>
   <button mat-button mat-dialog-close>&times;</button>
 </mat-toolbar>
 
-<form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
+<form novalidate #signupForm="ngForm" (ngSubmit)="onSubmit()">
   <mat-dialog-content>
     <p>
       <mat-form-field>
@@ -23,6 +23,6 @@
     <span class="flex-spacer"></span>
     <button mat-button mat-dialog-close>Cancel</button>
     <button type="submit" mat-button class="background-primary text-floral-white"
-            [disabled]="loginForm.form.invalid">Login</button>
+            [disabled]="signupForm.form.invalid">Sign up</button>
   </mat-dialog-actions>
 </form>
