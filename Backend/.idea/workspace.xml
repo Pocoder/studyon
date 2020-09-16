@@ -19,17 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="" />
+    <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/authenticate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/home/home.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/styles.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1halOTx9pksSSvhsVc5qu3dQwuk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,13 +64,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend/studyon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../programming/NodeJS/conFusionServer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600257051676</updated>
       <workItem from="1600257052726" duration="1408000" />
+      <workItem from="1600266629293" duration="2788000" />
     </task>
     <servers />
   </component>
@@ -72,11 +99,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600257214926">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600268108850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600257214926" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600268108850" />
   </component>
 </project>
