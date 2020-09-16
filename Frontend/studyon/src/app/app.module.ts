@@ -18,6 +18,8 @@ import { baseURL } from './shared/baseurl';
 import { AppComponent } from './app.component';
 
 import 'hammerjs';
+import { StudyonsComponent } from './studyons/studyons.component';
+import { PeopleComponent } from './people/people.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -27,12 +29,15 @@ import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interc
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    StudyonsComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
