@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
+import {ProcessHTTPMsgService} from './services/process-httpmsg.service';
 import { AuthService } from './services/auth.service';
 import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interceptor';
 
@@ -61,6 +62,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     MatListModule
   ],
   providers: [
+    ProcessHTTPMsgService,
+    AuthService,
     {provide: 'BaseURL', useValue: baseURL},
     {
       provide: HTTP_INTERCEPTORS,

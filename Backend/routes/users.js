@@ -4,21 +4,20 @@ const bodyParser = require('body-parser');
 var User = require('../models/user');
 var authenticate = require('../authenticate');
 var passport = require('passport');
-const cors = require('./cors');
+var cors = require('cors');
 
-router.options('*', cors.corsWithOptions, (req, res) => { res.sendStatus(200); } )
-
+//router.options('*', cors.corsWithOptions, (req, res, next) => { res.sendStatus(200); } )
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.get('/', authenticate.verifyUser, function(req, res, next) {
-  User.find()
-      .then((users) => {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.json(users);
-      }, (err) => next(err))
-      .catch((err) => next(err));
+router.get('/', authenticate.verifyUser, (req, res, next) => {
+    User.find()
+        .then((users) => {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.json(users);
+        }, (err) => next(err))
+        .catch((err) => next(err));
 });
 
 router.post('/signup', (req, res, next) => {
@@ -51,23 +50,23 @@ router.post('/signup', (req, res, next) => {
         });
 });
 
-router.post('/login', cors.corsWithOptions, passport.authenticate('local'), (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'You are successfully logged in!'});
+router.post('/login', passport.authenticate('local'), (req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.json({success: true, status: 'You are successfully logged in!'});
 });
 
-router.get('/logout', (req, res, next) => {
-  if (req.session) {
-    req.session.destroy();
-    res.clearCookie('session-id');
-    res.redirect('/');
-  }
-  else {
-    var err = new Error('You are not logged in!');
-    err.status = 403;
-    next(err);
-  }
+router.get('/logout', (req, res) => {
+    if (req.session) {
+        req.session.destroy();
+        res.clearCookie('session-id');
+        res.redirect('/');
+    }
+    else {
+        var err = new Error('You are not logged in!');
+        err.status = 403;
+        next(err);
+    }
 });
 
 module.exports = router;
