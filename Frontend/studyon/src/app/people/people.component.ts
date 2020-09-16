@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { User } from '../shared/user';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-people',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleComponent implements OnInit {
 
+  users: User[];
+  errMess: string;
+  username: string;
+
+  // private userService: UsersService,
+  // @Inject('baseURL') private baseURL
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    // this.userService.getUsers(this.username)
+    //  .subscribe(users => this.users = users,
+    //    errmess => this.errMess = errmess);
+  }
 }

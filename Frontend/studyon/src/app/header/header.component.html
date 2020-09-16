@@ -5,7 +5,9 @@
       <a mat-button routerLink="/studyons" routerLinkActive="active"> Stadyons</a>
       <a mat-button routerLink="/people" routerLinkActive="active"> People</a>
       <span class="flex-spacer"></span>
-      <a mat-button (click)="openSignupForm()">Sign Up</a>
-      <a mat-button (click)="openLoginForm()">Login</a>
+      <a *ngIf="!username" mat-button (click)="openSignupForm()">Sign Up</a>
+      <a *ngIf="!username" mat-button (click)="openLoginForm()">Login</a>
+      <a *ngIf="username" id="nick">{{username}} </a>
+      <a *ngIf="username" mat-button (click)="logOut()"><span class="fa fa-sign-out fa-lg"></span> Logout</a>
   </mat-toolbar>
 </div>
