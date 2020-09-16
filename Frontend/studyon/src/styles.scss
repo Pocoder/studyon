@@ -30,7 +30,9 @@ body {
 }
 
 .container {
-  margin: 20px;
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
   display:flex;
 }
 
@@ -65,4 +67,7 @@ body {
   transform: scale(1.01);
   border: 1px solid $primary-color-dark;
   z-index: 1;
+}
+.head_div{
+  background-color: $primary-color;
 }

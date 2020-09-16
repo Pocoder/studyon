@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog'
+import {MatListModule} from '@angular/material/list';
 import { baseURL } from './shared/baseurl';
 
 
@@ -53,7 +54,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     MatCheckboxModule,
     FormsModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
   ],
   providers: [
     {provide: 'BaseURL', useValue: baseURL},

@@ -3,6 +3,7 @@ $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
 $background-moredark: #4527A0;
+$primary-color:        #673AB7;
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
   margin: 0px auto;
@@ -10,10 +11,17 @@ $background-moredark: #4527A0;
 }
 
 .mat-toolbar {
-  @include zero-margin(0px, 10px);
+  @include zero-margin(0px, 0px);
   color:floralwhite;
   min-height: 0px;
+  max-width: 1400px;
+
 }
+
+.head_div{
+  background-color: $primary-color;
+}
+
 
 //.active {
 //  background: $background-moredark;
