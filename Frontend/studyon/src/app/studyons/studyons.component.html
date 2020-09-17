@@ -1,8 +1,30 @@
 <div class="container"
-     fxLayout="row"
+     fxLayout="column"
      fxLayout.sm="column"
      fxLayout.xs="column"
-     fxLayoutAlign.gt-md="space-around center"
      fxLayoutGap="10px">
-  Here are studyons!
+  <h2>
+    Here you can find studyons.
+  </h2>
+  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" >
+    <input matInput [(ngModel)]="studyon.title" name="title"
+           #title="ngModel" placeholder="enter studyon title">
+    <button type="submit" class="background-primary text-floral-white"
+            [disabled]="searchForm.form.invalid">Search</button>
+  </form>
+  <div>
+    <h2> Results </h2>
+    <mat-list *ngIf="studyons">
+      <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/',studyon._id]">
+        <h4 matLine> {{studyon.title}} </h4>
+      </mat-list-item>
+    </mat-list>
+    <div [hidden]="studyons || errMess">
+      <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
+    </div>
+    <div *ngIf="errMess">
+      <h2>Error</h2>
+      <h4>{{errMess}}</h4>
+    </div>
+  </div>
 </div>

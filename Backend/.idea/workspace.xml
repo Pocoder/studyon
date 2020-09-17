@@ -20,17 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/ssqFR_iFJRa4Oig3p0wEyF02-gbzjdCz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/studyon.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1600266629293" duration="5860000" />
       <workItem from="1600274947764" duration="3663000" />
       <workItem from="1600282564693" duration="3224000" />
-      <workItem from="1600321800508" duration="3877000" />
+      <workItem from="1600321800508" duration="6387000" />
     </task>
     <servers />
   </component>
