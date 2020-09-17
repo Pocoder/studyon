@@ -15,11 +15,16 @@ var User = new Schema({
         type: Boolean,
         default: false
     },
-    studyons: [String]
+    studyons: {
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: 'Studyon'
+    }
 }, {
     timestamps: true
 });
 
 User.plugin(passportLocalMongoose);
 
-module.exports = mongoose.model('User', User);
+const Users = mongoose.model('User', User);
+
+module.exports = Users;
