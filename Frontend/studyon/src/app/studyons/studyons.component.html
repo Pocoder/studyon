@@ -2,8 +2,8 @@
      fxLayout="row"
      fxLayout.sm="column"
      fxLayout.xs="column"
-     fxLayoutGap="10px">
-  <div fxFlex="30%">
+     fxLayoutGap="10%">
+  <div fxFlex="40%">
     <h2> Here are your studyons. </h2>
     <mat-list *ngIf="myStudyons">
       <mat-list-item *ngFor="let studyon of myStudyons" [routerLink]="['/',studyon._id]">
@@ -17,19 +17,30 @@
       <h2>Error</h2>
       <h4>{{errMess}}</h4>
     </div>
+    <form novalidate #studyonCreateForm="ngForm" (ngSubmit)="createNewStudyon()">
+      <mat-dialog-content>
+          <input matInput placeholder="Studyon title" type="text" [(ngModel)]="newStudyon.title" name="title" fxFlex
+                 #title="ngModel" required>
+          <mat-error *ngIf="title.errors?.required">Title is required</mat-error>
+          <button type="submit" mat-button class="background-primary text-floral-white"
+                  [disabled]="studyonCreateForm.form.invalid">Create Studyon</button>
+      </mat-dialog-content>
+    </form>
   </div>
-  <div fxFlex>
+  <div fxFlex="40%">
     <h2>
       Here you can find studyons.
     </h2>
-    <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" >
-      <input matInput [(ngModel)]="studyon.title" name="title"
-             #title="ngModel" placeholder="enter studyon title">
-      <button type="submit" class="background-primary text-floral-white"
-              [disabled]="searchForm.form.invalid">Search</button>
+    <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()">
+      <mat-dialog-content>
+        <input matInput [(ngModel)]="studyon.title" name="title" fxFlex
+               #title="ngModel" placeholder="enter studyon title">
+        <button type="submit" mat-button class="background-primary text-floral-white"
+                [disabled]="searchForm.form.invalid">Search</button>
+      </mat-dialog-content>
     </form>
     <div>
-      <h2> Results </h2>
+      <h2 *ngIf="studyons"> Results </h2>
       <mat-list *ngIf="studyons">
         <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/',studyon._id]">
           <h4 matLine> {{studyon.title}} </h4>

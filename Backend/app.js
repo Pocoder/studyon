@@ -45,7 +45,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/studyons', studyonsRouter);
+//app.use('/studyons', studyonsRouter);
 
 function auth (req, res, next) {
   console.log(req.user);

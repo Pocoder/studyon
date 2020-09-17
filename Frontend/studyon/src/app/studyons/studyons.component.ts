@@ -15,6 +15,7 @@ export class StudyonsComponent implements OnInit {
   studyons: Studyon[];
   errMess: string;
   studyon = { title: ''};
+  newStudyon = {title: ''};
 
   constructor(private studyonService: StudyonsService,
               private userService: UsersService) { }
@@ -26,5 +27,8 @@ export class StudyonsComponent implements OnInit {
     this.studyonService.getStudyons(this.studyon.title)
       .subscribe(studyons => this.studyons = studyons,
         errMess => this.errMess = errMess);
+  }
+
+  createNewStudyon() {
   }
 }

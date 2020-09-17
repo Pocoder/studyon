@@ -8,4 +8,4 @@ var Studyon = new Schema({
     },
 });
 
-module.exports = mongoose.model('User', User);
+module.exports = mongoose.model('Studyon', Studyon);

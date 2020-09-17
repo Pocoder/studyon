@@ -6,14 +6,16 @@
   <h2>
     Here you can find your friends.
   </h2>
-  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" >
-    <input matInput [(ngModel)]="user.username" name="username"
-          #username="ngModel" placeholder="enter username">
-    <button type="submit" class="background-primary text-floral-white"
-            [disabled]="searchForm.form.invalid">Search</button>
+  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" fxFlex>
+    <mat-dialog-content style="max-width: 500px">
+      <input matInput [(ngModel)]="user.username" type="text" name="username" fxFlex
+            #username="ngModel" placeholder="enter username">
+      <button mat-button type="submit" class="background-primary text-floral-white"
+              [disabled]="searchForm.form.invalid">Search</button>
+    </mat-dialog-content>
   </form>
   <div>
-    <h2> Results </h2>
+    <h2 *ngIf="users"> Results </h2>
     <mat-list *ngIf="users">
       <mat-list-item *ngFor="let user of users" [routerLink]="['/',user._id]">
         <h4 matLine> {{user.username}} </h4>
