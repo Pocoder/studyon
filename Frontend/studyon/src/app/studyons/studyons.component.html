@@ -1,30 +1,47 @@
 <div class="container"
-     fxLayout="column"
+     fxLayout="row"
      fxLayout.sm="column"
      fxLayout.xs="column"
      fxLayoutGap="10px">
-  <h2>
-    Here you can find studyons.
-  </h2>
-  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" >
-    <input matInput [(ngModel)]="studyon.title" name="title"
-           #title="ngModel" placeholder="enter studyon title">
-    <button type="submit" class="background-primary text-floral-white"
-            [disabled]="searchForm.form.invalid">Search</button>
-  </form>
-  <div>
-    <h2> Results </h2>
-    <mat-list *ngIf="studyons">
-      <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/',studyon._id]">
+  <div fxFlex="30%">
+    <h2> Here are your studyons. </h2>
+    <mat-list *ngIf="myStudyons">
+      <mat-list-item *ngFor="let studyon of myStudyons" [routerLink]="['/',studyon._id]">
         <h4 matLine> {{studyon.title}} </h4>
       </mat-list-item>
     </mat-list>
-    <div [hidden]="studyons || errMess">
+    <div [hidden]="myStudyons || errMess">
       <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
     </div>
     <div *ngIf="errMess">
       <h2>Error</h2>
       <h4>{{errMess}}</h4>
+    </div>
+  </div>
+  <div fxFlex>
+    <h2>
+      Here you can find studyons.
+    </h2>
+    <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()" >
+      <input matInput [(ngModel)]="studyon.title" name="title"
+             #title="ngModel" placeholder="enter studyon title">
+      <button type="submit" class="background-primary text-floral-white"
+              [disabled]="searchForm.form.invalid">Search</button>
+    </form>
+    <div>
+      <h2> Results </h2>
+      <mat-list *ngIf="studyons">
+        <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/',studyon._id]">
+          <h4 matLine> {{studyon.title}} </h4>
+        </mat-list-item>
+      </mat-list>
+      <div [hidden]="studyons || errMess">
+        <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
+      </div>
+      <div *ngIf="errMess">
+        <h2>Error</h2>
+        <h4>{{errMess}}</h4>
+      </div>
     </div>
   </div>
 </div>

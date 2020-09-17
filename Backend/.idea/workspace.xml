@@ -20,15 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sessions/ssqFR_iFJRa4Oig3p0wEyF02-gbzjdCz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/studyon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/studyon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/studyons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/LQ6cAPeoBHIMH8HV9bgClKV6oIM7T6uC.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/shared/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -68,6 +67,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +81,7 @@
       <workItem from="1600266629293" duration="5860000" />
       <workItem from="1600274947764" duration="3663000" />
       <workItem from="1600282564693" duration="3224000" />
-      <workItem from="1600321800508" duration="6387000" />
+      <workItem from="1600321800508" duration="6827000" />
     </task>
     <servers />
   </component>

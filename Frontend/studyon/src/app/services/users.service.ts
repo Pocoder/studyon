@@ -6,6 +6,7 @@ import { map, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { baseURL } from '../shared/baseurl';
 import { ProcessHTTPMsgService } from './process-httpmsg.service';
+import { Studyon } from '../shared/studyon';
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,12 @@ export class UsersService {
 
   getUser(id: string): Observable<User> {
     return this.http.get<User>(baseURL + 'users/' + id)
+      .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
+
+  getStudyonsOfUser(id: string): Observable<Studyon[]> {
+    return this.http.get<User>(baseURL + 'users/' + id)
+      .pipe(map(user => user.studyons))
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 }
