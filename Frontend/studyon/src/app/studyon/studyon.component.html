@@ -1,10 +1,30 @@
 <div class="container"
-     fxLayout="column"
+     fxLayout="row"
      fxLayout.sm="column"
-     fxLayout.xs="column"
-     fxLayoutGap="10px">
-
-  <h2 *ngIf="studyon">
-    {{studyon.title}}
-  </h2>
+     fxLayout.xs="column">
+  <h2 *ngIf="studyon" style="margin: 5px">{{studyon.title}} -- Studyon</h2>
+</div>
+<div class="container"
+     fxLayout="row"
+     fxLayout.sm="column"
+     fxLayout.xs="column">
+  <div fxFlex="20">
+    <h3>Chats</h3>
+    <mat-list *ngIf="studyon">
+      <mat-list-item *ngFor="let chat of studyon.discussions">
+        <h4 matLine> {{chat.title}} </h4>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div fxFlex="60">
+    <h3>Messages</h3>
+  </div>
+  <div fxFlex="20">
+    <h3>Members</h3>
+    <mat-list *ngIf="studyon">
+      <mat-list-item *ngFor="let member of studyon.members">
+        <h4 matLine> {{member.username}} </h4>
+      </mat-list-item>
+    </mat-list>
+  </div>
 </div>
