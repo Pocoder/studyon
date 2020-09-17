@@ -6,13 +6,14 @@
   <h2>
     Here you can find your friends.
   </h2>
-  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
-    <input name="username" placeholder="enter username">
-    <button type="submit" class="background-primary text-floral-white" [disabled]="searchForm.invalid">Search</button>
+  <form novalidate #searchForm="ngForm" (ngSubmit)="onSubmit()">
+    <input [(ngModel)]="user.username" name="username"
+          #username="ngModel" placeholder="enter username">
+    <button type="submit" class="background-primary text-floral-white" [disabled]="searchForm.form.invalid">Search</button>
   </form>
   <div>
     <h2> Results </h2>
-    <mat-list *ngIf="users" [@expand]>
+    <mat-list *ngIf="users">
       <mat-list-item *ngFor="let user of users">
         <h4 matLine> {{user.username}} </h4>
         <p matLine> {{user.firstname}}</p>

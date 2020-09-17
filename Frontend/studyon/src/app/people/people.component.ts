@@ -12,15 +12,14 @@ export class PeopleComponent implements OnInit {
 
   users: User[];
   errMess: string;
-
-  //
+  user = { username: ''};
   constructor(private userService: UsersService) { }
 
   ngOnInit() {
   }
 
-  onSubmit(searchForm: NgForm) {
-     this.userService.getUsers(searchForm.value.username)
+  onSubmit() {
+    this.userService.getUsers(this.user.username)
       .subscribe(users => this.users = users,
         errMess => this.errMess = errMess);
   }
