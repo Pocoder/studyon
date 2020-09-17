@@ -20,7 +20,6 @@ export class StudyonsComponent implements OnInit {
               private userService: UsersService) { }
 
   ngOnInit() {
-    this.userService.getStudyonsOfUser()
   }
 
   onSubmit() {
