@@ -33,6 +33,7 @@ import { AuthService } from './services/auth.service';
 import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interceptor';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -44,7 +45,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     LoginComponent,
     StudyonsComponent,
     PeopleComponent,
-    SignupComponent
+    SignupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

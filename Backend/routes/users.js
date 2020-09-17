@@ -20,6 +20,16 @@ router.get('/', authenticate.verifyUser, (req, res, next) => {
         .catch((err) => next(err));
 });
 
+router.get('/:userId', authenticate.verifyUser, (req,res,next) => {
+        User.findById(req.params.userId)
+            .then((user) => {
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.json(user);
+            }, (err) => next(err))
+            .catch((err) => next(err));
+    })
+
 router.post('/signup', (req, res, next) => {
     User.register(new User({username: req.body.username}),
         req.body.password, (err, user) => {

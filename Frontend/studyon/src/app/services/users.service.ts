@@ -18,4 +18,9 @@ export class UsersService {
     return this.http.get<User[]>(baseURL + `users?username=${username}`)
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
+
+  getUser(id: string): Observable<User> {
+    return this.http.get<User>(baseURL + 'users/' + id)
+      .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
 }
