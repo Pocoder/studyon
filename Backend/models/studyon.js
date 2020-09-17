@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Message = new Schema({
+var MessageSchema = new Schema({
     text: {
         type: String,
         required: true
@@ -14,39 +14,30 @@ var Message = new Schema({
     timestamps: true
 });
 
-var Discussion = new Schema({
+var DiscussionSchema = new Schema({
     title: {
         type: String,
         required: true,
     },
-    messages: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'Message'
-    }
+    messages: [MessageSchema]
 }, {
     timestamps: true
 });
 
-var Studyon = new Schema({
+var StudyonSchema = new Schema({
     title: {
         type: String,
         required: true,
         unique: true
     },
-    members: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'User'
-    },
-    discussions: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'Discussion'
-    }
+    members: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
+    discussions: [DiscussionSchema]
 }, {
     timestamps: true
 });
 
-const Message = mongoose.model('Message', Message);
-const Discussion = mongoose.model('Discussion', Discussion);
-const Studyon = mongoose.model('Studyon', Studyon);
+const Message = mongoose.model('Message', MessageSchema);
+const Discussion = mongoose.model('Discussion', DiscussionSchema);
+const Studyon = mongoose.model('Studyon', StudyonSchema);
 
 module.exports = Studyon;
