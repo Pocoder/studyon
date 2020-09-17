@@ -1,11 +1,26 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+var memberSchema = new Schema({
+    author: {
+        type: String,
+        required: true
+    }
+}, {
+    timestamps: true
+});
+
+
 var Studyon = new Schema({
     title: {
         type: String,
-        default: ''
+        required: true
     },
+    members: [memberSchema]
+}, {
+    timestamps: true
 });
 
-module.exports = mongoose.model('Studyon', Studyon);
+var Studyons = mongoose.model('Studyon', Studyon);
+
+module.exports = Studyons;

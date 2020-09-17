@@ -30,5 +30,7 @@ export class StudyonsComponent implements OnInit {
   }
 
   createNewStudyon() {
+    this.studyonService.createStudyon(this.newStudyon)
+      .subscribe(studyon => this.newStudyon = <Studyon>studyon);
   }
 }

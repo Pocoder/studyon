@@ -34,4 +34,9 @@ export class StudyonsService {
     return this.http.get<User[]>(baseURL + 'studyons/' + id + '/members/')
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
+
+  createStudyon(title: any) {
+    return this.http.post(baseURL + 'studyons/', title)
+      .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
 }

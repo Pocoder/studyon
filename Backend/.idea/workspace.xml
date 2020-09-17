@@ -20,28 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sessions/0etpVUnqVUpZ3PiRbi8opi0OJX8pN7R6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/2QGW3gihxa5F6ZJbYmhcLUyHvasSWxwZ.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/7oIvFNnfFI9FRVVQ_Bpqrb7AKr4eYzH2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/SIG2TKmR-4V-BWyUirLVOkoW-G0XuJit.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/SMGWOswOYf1TG7OORVFyi3TGQUcVz7bG.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/y-zN4Wv5OxpyG9EzA866l84rgNUGfZJ5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/zMYRckpPqcaqbH7mVguh4iqwvvm9mgFS.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/discussions.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/discussions.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/message.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/message.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/uuCJMFcz7HYm7flRLk_AxQCOUoAdDAfg.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/studyon.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/studyon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/studyons.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/studyons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +82,7 @@
       <workItem from="1600274947764" duration="3663000" />
       <workItem from="1600282564693" duration="3224000" />
       <workItem from="1600321800508" duration="6827000" />
-      <workItem from="1600337691067" duration="2185000" />
+      <workItem from="1600337691067" duration="4653000" />
     </task>
     <servers />
   </component>
