@@ -35,8 +35,8 @@ export class StudyonsService {
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
-  createStudyon(title: any) {
-    return this.http.post(baseURL + 'studyons/', title)
+  createStudyon(title: any): Observable<Studyon> {
+    return this.http.post<Studyon>(baseURL + 'studyons/', title)
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 }

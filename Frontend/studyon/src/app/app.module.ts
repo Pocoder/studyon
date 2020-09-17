@@ -34,6 +34,7 @@ import { AuthInterceptor, UnauthorizedInterceptor } from './services/auth.interc
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
+import { StudyonComponent } from './studyon/studyon.component';
 
 
 
@@ -46,7 +47,8 @@ import { ProfileComponent } from './profile/profile.component';
     StudyonsComponent,
     PeopleComponent,
     SignupComponent,
-    ProfileComponent
+    ProfileComponent,
+    StudyonComponent
   ],
   imports: [
     BrowserModule,

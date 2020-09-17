@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { LoginComponent } from '../login/login.component';
-import {SignupComponent} from '../signup/signup.component';
+import { SignupComponent } from '../signup/signup.component';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 

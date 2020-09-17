@@ -10,12 +10,8 @@
         <h4 matLine> {{studyon.title}} </h4>
       </mat-list-item>
     </mat-list>
-    <div [hidden]="myStudyons || errMess">
+    <div [hidden]="myStudyons || errMess1">
       <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
-    </div>
-    <div *ngIf="errMess">
-      <h2>Error</h2>
-      <h4>{{errMess}}</h4>
     </div>
     <form novalidate #studyonCreateForm="ngForm" (ngSubmit)="createNewStudyon()">
       <mat-dialog-content>
@@ -25,6 +21,10 @@
           <button type="submit" mat-button class="background-primary text-floral-white"
                   [disabled]="studyonCreateForm.form.invalid">Create Studyon</button>
       </mat-dialog-content>
+      <div *ngIf="errMess1">
+        <h2>Error</h2>
+        <h4>{{errMess1}}</h4>
+      </div>
     </form>
   </div>
   <div fxFlex="40%">
@@ -42,16 +42,16 @@
     <div>
       <h2 *ngIf="studyons"> Results </h2>
       <mat-list *ngIf="studyons">
-        <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/',studyon._id]">
+        <mat-list-item *ngFor="let studyon of studyons" [routerLink]="['/studyons', studyon._id]">
           <h4 matLine> {{studyon.title}} </h4>
         </mat-list-item>
       </mat-list>
-      <div [hidden]="studyons || errMess">
+      <div [hidden]="studyons || errMess2">
         <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
       </div>
-      <div *ngIf="errMess">
+      <div *ngIf="errMess2">
         <h2>Error</h2>
-        <h4>{{errMess}}</h4>
+        <h4>{{errMess2}}</h4>
       </div>
     </div>
   </div>

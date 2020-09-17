@@ -30,9 +30,9 @@ export class UsersService {
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
-  getStudyonsOfUser(id: string): Observable<Studyon[]> {
-    return this.http.get<User>(baseURL + 'users/' + id + '/studyons/')
-      .pipe(map(user => user.studyons))
+  getStudyonsOfUser(username: string): Observable<Studyon[]> {
+    return this.http.get<User[]>(baseURL + `users/?username=${username}`)
+      .pipe(map(users => users[0].studyons))
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 }

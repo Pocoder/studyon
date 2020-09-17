@@ -4,7 +4,22 @@
      fxLayout.xs="column"
      fxLayoutGap="10px">
 
-  <p *ngIf="user">
+  <h2 *ngIf="user">
     {{user.username}}
-  </p>
+  </h2>
+  <div>
+    <h3 *ngIf="user"> Studyons </h3>
+    <mat-list *ngIf="user">
+      <mat-list-item *ngFor="let studyon of user.studyons" [routerLink]="['/studyons', studyon._id]">
+        <h4 matLine> {{studyon.title}} </h4>
+      </mat-list-item>
+    </mat-list>
+    <div [hidden]="user || errMess">
+      <!--<mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>-->
+    </div>
+    <div *ngIf="errMess">
+      <h2>Error</h2>
+      <h4>{{errMess}}</h4>
+    </div>
+  </div>
 </div>

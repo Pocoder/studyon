@@ -18,8 +18,7 @@ export class ProfileComponent implements OnInit {
               private userService: UsersService) { }
 
   ngOnInit() {
-    console.log('hello!');
-    this.route.params.pipe(switchMap((params: Params) => { return this.userService.getUser(params['id']); }))
+    this.route.params.pipe(switchMap((params: Params) => this.userService.getUser(params['id']) ))
       .subscribe(user => {
           this.user = user;
         },

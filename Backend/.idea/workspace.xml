@@ -20,13 +20,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sessions/uuCJMFcz7HYm7flRLk_AxQCOUoAdDAfg.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/2AqXJWiYjG939mmT8fsGH7ioAhGoCuGE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/Ak-xcqTBphXjRhMSl_2S-FOENwxjPz0U.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/CdBC1gmGwkJqDT8bgrm3xfh37U_9OTxI.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/DxD7zG-2RUuNxaaWhGJlHObU7wRFmB_6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/EmCg6H748ynTkK3_4pkiJv2H7LdzTu59.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/cIbgfhiMs2m2coL44zv3mYBV1I4mJ6-e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/dxdYrbAGS8FV6sqt-TqCDIS1ClmcbOPc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/heZ_ltVTHy6m5c1LsMo3YbvHRWrE81yk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/jAKhbB_09nGk_LMSYhJvqnVvuFyTLlkU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/jID2R6FmdchAPTyknvujkztwTy9zgHZV.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/lijwrLu0iiFiZTse8GJds_9PtNoK_fAJ.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/qYVGNiEkb0p1Qo89VG-H1-DJcPvBSlI1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/ykejfky3p-s4j-oMjq-0kbqJ_eU93pPX.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/studyon.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/studyon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/studyons.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/studyons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/-9eDRPqmo1fTwBu0N9-ayrhoi7CO62GP.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/0etpVUnqVUpZ3PiRbi8opi0OJX8pN7R6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/21YdY1sf2HmN7vlfKXjaIsmGYuL7kQNd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/2QGW3gihxa5F6ZJbYmhcLUyHvasSWxwZ.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/3emh-tG3sSZRJYMn5QkRPfy3VizddzCT.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/5YQRHUR-0gCrmfMcWMZS7O6uGWJAiOcN.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/6dPM9Sdv4YfCNTSngQ11dOkk3rgE1w7A.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/7oIvFNnfFI9FRVVQ_Bpqrb7AKr4eYzH2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/7sSIMlbgTrqeJWvNF1omNpSwUxbtLGDJ.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/DOpyx4pr22LwhYqOWhFTQrYu-O9FUFOD.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/GxCs3S8f54yfekxensaB-k88omMotrZ_.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/Iz0QhnsY6MFa8Y7aH-5cS3xdc1aUxQzV.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/LQ6cAPeoBHIMH8HV9bgClKV6oIM7T6uC.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/RcQcXRgxuA8qOPhGnQwEM1OqBcV1hAoq.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/SIG2TKmR-4V-BWyUirLVOkoW-G0XuJit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/SMGWOswOYf1TG7OORVFyi3TGQUcVz7bG.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/SZp0FSzuK7fbQazhaEAGBcawM0mcbUHG.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/VExyy4x_9rSb5yqikTcpl7xXWNfTI6hF.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/WGikfA7NxamZqRsdjNP6l_i27ywS8ocB.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/YNWDoxk8OhVf68hPZtQl3Flz08zBQDy3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/abHWKdfZG5yeoK7Dl9Xmk8c_bN-TcJgX.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/ai-nw05cJhwcE2BGf2dQm_ho72H0jTsN.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/bGVI9A0VTbmo_AteV8Jvb6UY9azspu8c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/bxs59qFMStqExP4Jz2rbj8XjnzCvLIvz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/cQcFq6B_f2_1m7rWyWz_T9U00jYb3253.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/eKF2a5ggGmXlxMLyCPvW7kpOpVg2x8rN.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/gi0kxXn5IzUh6ziRZ6zExazAooG_tmIP.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/nblu_1AqNzVRcl6-wM3UbkeNN3AePlI1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/oa1Z0bR5aEhHjWBd02IfOrE3bsW_SXiE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/qr5bFQbEp4ow7RPKRtjtgYsFW2RaugSl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/ssqFR_iFJRa4Oig3p0wEyF02-gbzjdCz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/u9WhWB9ScbZir5Lij0HVcruftjPtcS7l.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/uuCJMFcz7HYm7flRLk_AxQCOUoAdDAfg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/xpJ3IaXbAFEPpKIwFSK54RpVE2AKMe4Z.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/y-zN4Wv5OxpyG9EzA866l84rgNUGfZJ5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/yRpfa-ck5sQRVgGK6GF_tUWxI9WOBwyY.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/zMYRckpPqcaqbH7mVguh4iqwvvm9mgFS.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/zh3nuDaLdeHy_ek_3awUXiWRvi1mdiBg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/app-routing/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/people/people.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/profile/profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +144,7 @@
       <workItem from="1600274947764" duration="3663000" />
       <workItem from="1600282564693" duration="3224000" />
       <workItem from="1600321800508" duration="6827000" />
-      <workItem from="1600337691067" duration="4653000" />
+      <workItem from="1600337691067" duration="15547000" />
     </task>
     <servers />
   </component>

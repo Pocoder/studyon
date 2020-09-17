@@ -17,7 +17,7 @@
   <div>
     <h2 *ngIf="users"> Results </h2>
     <mat-list *ngIf="users">
-      <mat-list-item *ngFor="let user of users" [routerLink]="['/',user._id]">
+      <mat-list-item *ngFor="let user of users" [routerLink]="['/people',user._id]">
         <h4 matLine> {{user.username}} </h4>
         <p matLine> {{user.firstname}}</p>
         <p matLine>{{user.lastname}}</p>
