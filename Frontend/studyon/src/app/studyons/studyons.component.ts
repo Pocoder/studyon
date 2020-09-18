@@ -4,7 +4,7 @@ import { StudyonsService } from '../services/studyons.service';
 import { UsersService } from '../services/users.service';
 import { NgForm } from '@angular/forms';
 import { User } from '../shared/user';
-import {AuthService} from '../services/auth.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-studyons',
@@ -24,11 +24,10 @@ export class StudyonsComponent implements OnInit {
               private authService: AuthService) { }
 
   ngOnInit() {
-    this.authService.getUsername()
-      .subscribe(username => {
-        this.userService.getStudyonsOfUser(username)
-          .subscribe(studyons => this.myStudyons = studyons, errMess => this.errMess1 = errMess);
-      }, errMess => this.errMess1 = errMess);
+      this.userService.getMyStudyons()
+        .subscribe(studyons => {
+          this.myStudyons = studyons;
+        }, errMess => this.errMess1 = errMess);
   }
 
   createNewStudyon() {

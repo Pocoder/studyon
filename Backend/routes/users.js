@@ -3,6 +3,7 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 var User = require('../models/user');
 var Studyon = require('../models/studyon');
+var Discussion = require('../models/discussion');
 var authenticate = require('../authenticate');
 var passport = require('passport');
 var cors = require('./cors');
@@ -12,6 +13,7 @@ router.use(bodyParser.json());
 /* GET users listing. */
 router.get('/', authenticate.verifyUser, (req, res, next) => {
     User.find(req.query)
+        .populate('studyons')
         .then((users) => {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
@@ -82,7 +84,6 @@ router.post('/login', cors.corsWithOptions, (req, res, next) => {
                 res.setHeader('Content-Type', 'application/json');
                 res.json({success: false, status: 'Login Unsuccessful!', err: 'Could not log in user!'});
             }
-
             var token = authenticate.getToken({_id: req.user._id});
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');

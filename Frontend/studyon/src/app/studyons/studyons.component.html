@@ -6,7 +6,7 @@
   <div fxFlex="40%">
     <h2> Here are your studyons. </h2>
     <mat-list *ngIf="myStudyons">
-      <mat-list-item *ngFor="let studyon of myStudyons" [routerLink]="['/',studyon._id]">
+      <mat-list-item *ngFor="let studyon of myStudyons" [routerLink]="['/studyons',studyon._id]">
         <h4 matLine> {{studyon.title}} </h4>
       </mat-list-item>
     </mat-list>

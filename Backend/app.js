@@ -12,6 +12,7 @@ const cors = require('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var studyonsRouter = require('./routes/studyons');
+var myStudyonsRouter = require('./routes/mystudyons');
 
 var mongoose = require('mongoose');
 
@@ -46,6 +47,7 @@ app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/studyons', studyonsRouter);
+app.use('/mystudyons', myStudyonsRouter);
 
 function auth (req, res, next) {
   console.log(req.user);

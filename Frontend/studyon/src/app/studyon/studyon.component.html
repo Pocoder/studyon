@@ -11,14 +11,25 @@
   <div fxFlex="20">
     <h3>Chats</h3>
     <mat-list *ngIf="studyon">
-      <mat-list-item *ngFor="let chat of studyon.discussions">
-        <h4 matLine> {{chat.title}} </h4>
+      <mat-list-item *ngFor="let chat of studyon.discussions" (click)="openChat(chat)">
+        <h4 matLine > {{chat.title}} </h4>
+      </mat-list-item>
+
+    </mat-list>
+  </div>
+
+  <div fxFlex="60">
+    <h3>Messages</h3>
+    <mat-list *ngIf="curChat">
+      <mat-list-item *ngFor="let mess of curChat.messages">
+        <h4 matLine> {{mess.text}} </h4>
+        <p matLine>
+          <span> -- {{mess.author}} {{mess.date | date }} </span>
+        </p>
       </mat-list-item>
     </mat-list>
   </div>
-  <div fxFlex="60">
-    <h3>Messages</h3>
-  </div>
+
   <div fxFlex="20">
     <h3>Members</h3>
     <mat-list *ngIf="studyon">
