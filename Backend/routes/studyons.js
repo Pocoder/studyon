@@ -25,21 +25,21 @@ studyonRouter.route('/')
     .post(cors.corsWithOptions, authenticate.verifyUser, (req, res, next) => {
         Studyons.create(req.body)
             .then((studyon) => {
-                studyon.members.push(req.user);
+                studyon.members.push(req.user._id);
                 return studyon.save();
             }, (err) => next(err))
             .then((studyon) => {
-                return User.findById(req.user._id)
-            }, (err) => next(err))
-            .then((user) => {
-                user.studyons.push(studyon.title);
-                return user.save();
-            }, (err)=> next(err))
-            .then((user) => {
-                res.statusCode = 200;
-                res.setHeader('Content-Type', 'application/json');
-                res.json(studyon);
-            }, (err) => next(err))
+                User.findById(req.user._id)
+                    .then((user) => {
+                        user.studyons.push(studyon._id);
+                        user.save();
+                    }, (err) => next(err))
+                    .then((user) => {
+                        res.statusCode = 200;
+                        res.setHeader('Content-Type', 'application/json');
+                        res.json(studyon);
+                    }, (err) => next(err))
+            })
             .catch((err) => next(err));
     })
 

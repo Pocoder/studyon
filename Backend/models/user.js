@@ -15,10 +15,7 @@ var User = new Schema({
         type: Boolean,
         default: false
     },
-    studyons: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'Studyon'
-    }
+    studyons: [{type: mongoose.Schema.Types.ObjectId, ref: 'Studyon'}]
 }, {
     timestamps: true
 });

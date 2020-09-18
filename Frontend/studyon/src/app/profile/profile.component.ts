@@ -4,6 +4,7 @@ import { UsersService } from '../services/users.service';
 
 import { Params, ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
+import { Studyon } from '../shared/studyon';
 
 @Component({
   selector: 'app-profile',
@@ -21,8 +22,9 @@ export class ProfileComponent implements OnInit {
     this.route.params.pipe(switchMap((params: Params) => this.userService.getUser(params['id']) ))
       .subscribe(user => {
           this.user = user;
-        },
-        errmess => this.errMess = <any>errmess);
+          console.log(this.user);
+      },
+          errmess => this.errMess = <any>errmess);
   }
 
 }

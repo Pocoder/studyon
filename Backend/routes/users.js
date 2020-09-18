@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 const bodyParser = require('body-parser');
 var User = require('../models/user');
+var Studyon = require('../models/studyon');
 var authenticate = require('../authenticate');
 var passport = require('passport');
 var cors = require('./cors');
 
-router.options('*', cors.corsWithOptions, (req, res, next) => { res.sendStatus(200); } )
 router.use(bodyParser.json());
 
 /* GET users listing. */
@@ -20,15 +20,20 @@ router.get('/', authenticate.verifyUser, (req, res, next) => {
         .catch((err) => next(err));
 });
 
-router.get('/:userId', authenticate.verifyUser, (req,res,next) => {
+router.route('/:userId')
+    .options(cors.corsWithOptions, authenticate.verifyUser, (req,res) => { res.sendStatus(200); })
+    .get(cors.cors, (req,res,next) => {
         User.findById(req.params.userId)
+            .populate('studyons')
             .then((user) => {
+                console.log(user);
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
                 res.json(user);
             }, (err) => next(err))
             .catch((err) => next(err));
     })
+
 
 router.post('/signup', (req, res, next) => {
     User.register(new User({username: req.body.username}),
