@@ -48,7 +48,7 @@
   <div fxFlex="20" id="members">
     <h3>Members</h3>
     <mat-list *ngIf="studyon">
-      <mat-list-item *ngFor="let member of studyon.members">
+      <mat-list-item *ngFor="let member of studyon.members" [routerLink]="['/people',member._id]">
         <h4 matLine> {{member.username}} </h4>
       </mat-list-item>
     </mat-list>
