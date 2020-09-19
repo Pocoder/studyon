@@ -8,7 +8,7 @@
      fxLayout="row"
      fxLayout.sm="column"
      fxLayout.xs="column">
-  <div fxFlex="20">
+  <div fxFlex="20" id="chats">
     <h3>Chats</h3>
     <mat-list *ngIf="studyon">
       <mat-list-item *ngFor="let chat of studyon.discussions" (click)="openChat(chat)">
@@ -18,7 +18,7 @@
     </mat-list>
   </div>
 
-  <div fxFlex="60">
+  <div fxFlex="60" id="messages">
     <h3>Messages</h3>
     <mat-list *ngIf="curChat">
       <mat-list-item *ngFor="let mess of curChat.messages">
@@ -28,9 +28,20 @@
         </p>
       </mat-list-item>
     </mat-list>
+
+    <!-- надо сделать сообщения -->
+    <form novalidate [formGroup]="messageForm" #mform="ngForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field class="full-width">
+          <textarea matInput formControlName="text" placeholder="Your message" rows=3></textarea>
+          <mat-error *ngIf="formErrors.comment">{{formErrors.comment}}</mat-error>
+        </mat-form-field>
+      </p>
+      <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="messageForm.invalid">Submit</button>
+    </form>
   </div>
 
-  <div fxFlex="20">
+  <div fxFlex="20" id="members">
     <h3>Members</h3>
     <mat-list *ngIf="studyon">
       <mat-list-item *ngFor="let member of studyon.members">

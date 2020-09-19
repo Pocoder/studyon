@@ -39,4 +39,9 @@ export class StudyonsService {
     return this.http.post<Studyon>(baseURL + 'studyons/', title)
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
+
+  postMessage(studyonId: string, chatId: string, value: string) {
+    return this.http.post(baseURL + 'studyons/' + studyonId + '/chats/' + chatId, value)
+      .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
 }

@@ -20,27 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430d1864-e76b-467c-9911-4634a8d3c549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/discussion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/mystudyons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/-t0JyeasQnqy-OnFYzv23MEtxS11Wqnu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/3qE4_bFhI63Qp6EnGqnJFMnrHb60phLh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/7Rq9ueUF1SU0OqbIxrQV2TYM0KQDOKMe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/K_CAtA4a7IMTgLuckkVB5IE6QO_bNQI0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/OC1BhktuW4ugoFX8mlBh6F9inW9Y7ZnO.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/OYb1_uhCYbOzi5-IbIF2VLt4WzcRBZ6Z.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/PvBDRWPjYYACvGnBD0BQxeOSnglxqpR7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/TJ-zlIneeteMl0EYq5HYB7WKcasF8ov-.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions/aEZ_aeqqP4GsEyYkNkJ3Dh5a8MjRjB9g.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/Izj0fNdXzLOO9d0VQ96eK_cWrnioRgG8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/KqEjvz1-0ZXby9U17moWbkZ94Gw6VlOa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/LI0WAeSgXxEJR7EB4AymQ3hr-xHgddBE.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/WaddxALFi3rsh3nA6r7Wmbv52vCQIDLR.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/YphVzMgNPehJvmwBLs-vZQFxBGWNS8pl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/YqzBt9tULmW_OCZL4Hyx_oi1qi41xL-8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/lvIFsEVqwqvjrhjbB4Dr6ShSONqPj-Qk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/q7TWHaj38RbnCCcKaIY_3IhnD4KQMzq0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/vFjNJdY5w0cn1YmWolse0ghOkLyKC49N.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/y10FPjs5HHinXais0R72vPbToJJCPAjk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions/yQ4y4HO1j2hlOvHu5ACOB6gSFj_Nx9wI.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/studyon.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/studyon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/studyons.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/studyons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/-t0JyeasQnqy-OnFYzv23MEtxS11Wqnu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/2AqXJWiYjG939mmT8fsGH7ioAhGoCuGE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/3qE4_bFhI63Qp6EnGqnJFMnrHb60phLh.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/7Rq9ueUF1SU0OqbIxrQV2TYM0KQDOKMe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/K_CAtA4a7IMTgLuckkVB5IE6QO_bNQI0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/OC1BhktuW4ugoFX8mlBh6F9inW9Y7ZnO.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/OYb1_uhCYbOzi5-IbIF2VLt4WzcRBZ6Z.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/PvBDRWPjYYACvGnBD0BQxeOSnglxqpR7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/QUeBvL4lGtX-SS3j5kgDA2QIJRM_TvYS.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/TJ-zlIneeteMl0EYq5HYB7WKcasF8ov-.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/_z9LKbML7FSTGP65-7AGATuk4HixPCiK.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/aEZ_aeqqP4GsEyYkNkJ3Dh5a8MjRjB9g.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/d6P4VBGXs5yiFTNQFOV0-BKUDWPkvr-O.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/f8T5UswlZpu9xJ74enGOxro7zi71mtDZ.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/jzqtmvSKOG1-rF7ZGvvhrnjIS8NJcRba.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/mdcTc6wN_9fe7uH9QhaIP2bYW9P-UBs4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/sNifcUCPrNjyWRcXeT1BaNPLw5Z3ld4c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/ulkfAC0GWtBYTpcr06AShGQ1YuAGYVI4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/xpIIqWEoniw0TK2h0nplFi0KJuV77Biu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/services/studyons.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyon/studyon.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/app/studyons/studyons.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/studyon/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/studyon/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +111,8 @@
       <workItem from="1600282564693" duration="3224000" />
       <workItem from="1600321800508" duration="6827000" />
       <workItem from="1600337691067" duration="19460000" />
-      <workItem from="1600410351264" duration="6659000" />
+      <workItem from="1600410351264" duration="7014000" />
+      <workItem from="1600502524462" duration="3872000" />
     </task>
     <servers />
   </component>
@@ -119,13 +135,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600415709785">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600504156004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600415709785" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600277284589">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600504156004" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600418397770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600277284589" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600418397770" />
   </component>
 </project>

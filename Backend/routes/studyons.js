@@ -62,11 +62,39 @@ studyonRouter.route('/:studyonId')
             .then((studyon) => {
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
-
-                console.log(studyon);
-
                 res.json(studyon);
             }, (err) => next(err))
             .catch((err) => next(err));
     })
+
+studyonRouter.route('/:studyonId/chats/:chatId')
+    .options(cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+    .post(cors.corsWithOptions, authenticate.verifyUser, (req, res, next) => {
+        Discussion.findById(req.params.chatId)
+            .populate('discussions.messages')
+            .then((discussion) => {
+                if (discussion != null) {
+                    req.body.author = req.user._id;
+                    discussion.messages.push(req.body);
+                    discussion.save()
+                        .then((discussion) => {
+                            Discussion.findById(discussion._id)
+                                .populate('messages')
+                                .populate('messages.author')
+                                .then((discussion) => {
+                                    res.statusCode = 200;
+                                    res.setHeader('Content-Type', 'application/json');
+                                    res.json(discussion);
+                                })
+                        }, (err) => next(err));
+                }
+                else {
+                    err = new Error('Discussion ' + req.params.chatId + ' not found');
+                    err.status = 404;
+                    return next(err);
+                }
+            }, (err) => next(err))
+            .catch((err) => next(err));
+    })
+
 module.exports = studyonRouter;
