@@ -41,6 +41,11 @@ export class StudyonsService {
       .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
+  createChat(studyonId: string): Observable<Discussion>{
+    return this.http.post<Discussion>(baseURL + 'studyons/' + studyonId + '/chats', '.')
+      .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
+
   getChat(studyonId: string, chatId: string): Observable<Discussion> {
     console.log('Im trying');
     return this.http.get<Discussion>(baseURL + 'studyons/' + studyonId + '/chats/' + chatId);

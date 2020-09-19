@@ -89,4 +89,11 @@ export class StudyonComponent implements OnInit {
       .subscribe(chat => this.curChat = chat);
   }
 
+  createChat() {
+    this.studyonService.createChat(this.studyon._id)
+      .subscribe(chat => {
+        this.curChat = chat;
+        this.studyon.discussions.push(this.curChat);
+      });
+  }
 }

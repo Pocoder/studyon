@@ -67,6 +67,35 @@ studyonRouter.route('/:studyonId')
             .catch((err) => next(err));
     })
 
+studyonRouter.route('/:studyonId/chats')
+    .options(cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+    .post(cors.corsWithOptions, authenticate.verifyUser, (req, res, next) => {
+        Studyons.findById(req.params.studyonId)
+            .then((studyon) => {
+                if (studyon != null) {
+                    Discussion.create({title: 'newchat'})
+                        .then((discussion) => {
+                            return discussion.save();
+                        })
+                        .then((discussion)=>{
+                            studyon.discussions.push(discussion._id);
+                            studyon.save()
+                                .then((studyon) => {
+                                    res.statusCode = 200;
+                                    res.setHeader('Content-Type', 'application/json');
+                                    res.json(discussion);
+                                })
+                        }, (err) => next(err))
+                }
+                else {
+                    err = new Error('Discussion ' + req.params.chatId + ' not found');
+                    err.status = 404;
+                    return next(err);
+                }
+            }, (err) => next(err))
+            .catch((err) => next(err));
+    })
+
 studyonRouter.route('/:studyonId/chats/:chatId')
     .options(cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
     .get(cors.cors, (req,res,next) => {

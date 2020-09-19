@@ -57,11 +57,27 @@ router.post('/signup', (req, res, next) => {
                         res.json({err: err});
                         return ;
                     }
-                    passport.authenticate('local')(req, res, () => {
-                        res.statusCode = 200;
-                        res.setHeader('Content-Type', 'application/json');
-                        res.json({success: true, status: 'Registration Successful!'});
-                    });
+                    passport.authenticate('local', (err, user, info) => {
+                        if (err)
+                            return next(err);
+
+                        if (!user) {
+                            res.statusCode = 401;
+                            res.setHeader('Content-Type', 'application/json');
+                            res.json({success: false, status: 'Signup Unsuccessful!', err: info});
+                        }
+                        req.logIn(user, (err) => {
+                            if (err) {
+                                res.statusCode = 401;
+                                res.setHeader('Content-Type', 'application/json');
+                                res.json({success: false, status: 'Signup Unsuccessful!', err: 'Could not sign up user!'});
+                            }
+                            var token = authenticate.getToken({_id: req.user._id});
+                            res.statusCode = 200;
+                            res.setHeader('Content-Type', 'application/json');
+                            res.json({success: true, status: 'Signup Successful!', token: token});
+                        });
+                    }) (req, res, next);
                 });
             }
         });
