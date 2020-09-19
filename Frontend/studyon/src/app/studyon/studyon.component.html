@@ -11,26 +11,30 @@
   <div fxFlex="20" id="chats">
     <h3>Chats</h3>
     <mat-list *ngIf="studyon">
-      <mat-list-item *ngFor="let chat of studyon.discussions" (click)="openChat(chat)">
-        <h4 matLine > {{chat.title}} </h4>
-      </mat-list-item>
-
+      <div fxLayout="column">
+        <button *ngFor="let chat of studyon.discussions" (click)="openChat(chat)">
+          <h4 matLine > {{chat.title}} </h4>
+        </button>
+      </div>
     </mat-list>
   </div>
 
   <div fxFlex="60" id="messages">
-    <h3>Messages</h3>
+    <h3 [hidden]="curChat">
+      Choose Chat
+    </h3>
+    <h3 *ngIf="curChat">Messages</h3>
     <mat-list *ngIf="curChat">
       <mat-list-item *ngFor="let mess of curChat.messages">
         <h4 matLine> {{mess.text}} </h4>
         <p matLine>
-          <span> -- {{mess.author}} {{mess.date | date }} </span>
+          <span> -- {{mess.author.username}} {{mess.date | date }} </span>
         </p>
       </mat-list-item>
     </mat-list>
 
     <!-- надо сделать сообщения -->
-    <form novalidate [formGroup]="messageForm" #mform="ngForm" (ngSubmit)="onSubmit()">
+    <form novalidate [formGroup]="messageForm" #mform="ngForm" (ngSubmit)="onSubmit()" *ngIf="curChat">
       <p>
         <mat-form-field class="full-width">
           <textarea matInput formControlName="text" placeholder="Your message" rows=3></textarea>

@@ -40,9 +40,9 @@ export class StudyonComponent implements OnInit {
     this.route.params.pipe(switchMap((params: Params) => this.studyonService.getStudyon(params['id']) ))
       .subscribe(studyon => {
           this.studyon = studyon;
-          if (this.studyon.discussions.length > 0) {
-            this.curChat = this.studyon.discussions[0];
-          }
+          //if (this.studyon.discussions.length > 0) {
+          //  this.curChat = this.studyon.discussions[0];
+          //}
         },
         errmess => this.errMess = <any>errmess);
   }
@@ -88,7 +88,8 @@ export class StudyonComponent implements OnInit {
   }
 
   openChat(newChat: Discussion) {
-    this.curChat = newChat;
+    this.studyonService.getChat(this.studyon._id, newChat._id)
+      .subscribe(chat => this.curChat = chat);
   }
 
 }

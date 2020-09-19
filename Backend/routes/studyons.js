@@ -69,6 +69,27 @@ studyonRouter.route('/:studyonId')
 
 studyonRouter.route('/:studyonId/chats/:chatId')
     .options(cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+    .get(cors.cors, (req,res,next) => {
+        Studyons.findByIdAndUpdate(req.params.studyonId)
+            .populate('discussions')
+            .then((studyon) => {
+                Discussion.findById(req.params.chatId)
+                    .populate('messages')
+                    .populate('messages.author')
+                    .then((discussion) => {
+                        if (discussion != null) {
+                            res.statusCode = 200;
+                            res.setHeader('Content-Type', 'application/json');
+                            res.json(discussion);
+                        } else if (discussion == null) {
+                            err = new Error('Discussion ' + req.params.chatId + ' not found');
+                            err.status = 404;
+                            return next(err);
+                        }
+                    }, (err) => next(err))
+            }, (err) => next(err))
+            .catch((err) => next(err));
+    })
     .post(cors.corsWithOptions, authenticate.verifyUser, (req, res, next) => {
         Discussion.findById(req.params.chatId)
             .populate('discussions.messages')

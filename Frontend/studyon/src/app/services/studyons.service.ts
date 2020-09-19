@@ -7,6 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { baseURL } from '../shared/baseurl';
 import { ProcessHTTPMsgService } from './process-httpmsg.service';
 import { User } from '../shared/user';
+import {Discussion} from '../shared/discussion';
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,11 @@ export class StudyonsService {
   createStudyon(title: any): Observable<Studyon> {
     return this.http.post<Studyon>(baseURL + 'studyons/', title)
       .pipe(catchError(this.processHTTPMsgService.handleError));
+  }
+
+  getChat(studyonId: string, chatId: string): Observable<Discussion> {
+    console.log('Im trying');
+    return this.http.get<Discussion>(baseURL + 'studyons/' + studyonId + '/chats/' + chatId);
   }
 
   postMessage(studyonId: string, chatId: string, value: string) {
